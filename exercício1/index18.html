@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title> Crie um código em JavaScript de um formulário de escola tentando colocar os principais dados de uma escola, que utilize a função validar,
+         e aplique um estilo de cor no fundo do formulário, nas fontes e insira 2 imagens, sendo um gif e um jpg ou png. </title>
+    <script>
+        nome1=window.prompt("Insira o nome da escola: "); if (nome1!=null && nome1!="")
+        {
+        document.write("Olá, "+nome1+"!");
+        }
+        else
+        {
+        document.write("Olá, visitante!");
+        }
+        </script>
+        
+</head>
+
+
+    <script>
+        function validar()
+        {
+        if (document.cadastro.nome.value == "")
+        { window.alert("Você deve preencher o campo Nome da Escola."); document.cadastro.nome.focus();
+        return false;
+        }
+        if (document.cadastro.observacoes.value == "")
+        { window.alert("Você deve colocar alguma observação..."); document.cadastro.observacoes.focus();
+        return false;
+        }
+        }
+        </script>
+        
+<FORM ACTION="mailto:maxbuzatto@gmail.com" METHOD="POST" ENCTYPE="text/plain" NAME="cadastro">
+
+<p> Por favor, preencha os campos abaixo e depois clique no botão Enviar. Caso necessite apagar os dados, dê um clique no botão Limpar.<br> Muito Obrigado!
+<br><br></p>
+
+Nome da escola:	<INPUT TYPE="TEXT" NAME="nome" SIZE="35">
+
+Seu endereço:	<INPUT TYPE="TEXT" NAME="email" SIZE="35"> <br>
+
+Turno de Funcionamento:<br>
+<INPUT TYPE="RADIO" NAME="Turno" VALUE="f"> Matutino <br>
+<INPUT TYPE="RADIO" NAME="Turno" VALUE="m"> Vespertino <br>
+<INPUT TYPE="RADIO" NAME="Turno" VALUE="m"> Ambos <br><br>
+
+Nível de ensino:<br>
+<INPUT TYPE="RADIO" NAME="ensino" VALUE="s"> Básico <br>
+<INPUT TYPE="RADIO" NAME="ensino" VALUE="c"> Médio <br>
+
+
+Quantidade alunos: <SELECT NAME="QuantAlunos">
+<OPTION VALUE="100"> 100 ou menos
+<OPTION VALUE="101a300"> 101 a 300
+<OPTION VALUE="301a500"> 301 a 500
+<OPTION VALUE="501a1000"> 501 a 1000
+<OPTION VALUE="1001"> mais de 1000
+</SELECT>
+
+Atividades de contraturno: <SELECT NAME="hobby">
+<OPTION VALUE="livros"> Clube do Livro
+<OPTION VALUE="idioma"> Aulas de Ingles
+<OPTION VALUE="cinema"> Assistir filmes
+<OPTION VALUE="esporte"> Aulas de Futebol
+
+</SELECT><br><br>
+
+Observações Gerais:<br>
+<TEXTAREA NAME="observacoes" ROWS="5" COLS="60"></TEXTAREA><br>
+
+<INPUT TYPE="SUBMIT" VALUE="Enviar os dados" onClick="validar();">
+<INPUT TYPE="RESET" VALUE="Limpar os dados">
+
+</FORM>
+</body>
+</html>

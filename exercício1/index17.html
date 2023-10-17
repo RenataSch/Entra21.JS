@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>exercício 4: Crie um código em JavaScript que mostre saudação ao usuário e abra 2 sites,
+         e que tenha também um button que ao clicar apareça uma imagem no tamanho total da página</title>
+         <script>
+            function abre1()
+            {
+            window.open("http://www.google.com");
+            }
+            
+            function abre2()
+            {
+            window.open("http://www.google.com","simples","width=350,height=400");
+            }
+            function abre3()
+            {
+            window.open("https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png");
+            }
+            </script>
+</head>
+<body>
+    <form>
+        Dê um clique no botão para abrir uma janela simples:
+<input type="button" name="abrir" value="Janela1" onClick="abre1()"><br><br>
+
+Dê um clique no botão para abrir uma janela de 350px de largura por 400px de altura, sem barras e menus:
+<input type="button" name="abrir" value="Janela2" onClick="abre2()"><br><br>
+
+Dê um clique no botão para abrir uma imagem:
+<input type="button" name="abrir" value="Janela3" onClick="abre3()"><br><br>
+
+    </form>
+</body>
+</html>
