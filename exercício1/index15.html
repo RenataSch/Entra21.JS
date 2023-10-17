@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+        <title>Exercício 2.1 - Crie um código em JavaScript com 3 janelas com perguntas. 
+            (utilize o prompt e write).</title>
+    </head>
+    <script>
+        let nota1 = prompt("Qual valor da primeira nota:" );
+        let nota2 = prompt("Qual valor da segunda nota:" );
+        let nota3 = prompt("Qual valor da terceira nota:" );
+        let nota4 = prompt("Qual valor da terceira nota:" );
+    
+        function media(n1, n2, n3, n4){
+            let media = (n1 + n2 + n3 + n4) / 4 ;
+            return media ;
+        }
+    
+        let mediaNotas = media(nota1, nota2, nota3, nota4);
+    
+        if (mediaNotas < 7){
+            window.alert("Aluno reprovado!")
+        }else {
+            window.alert("Aluno Aprovado")
+        }
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>
