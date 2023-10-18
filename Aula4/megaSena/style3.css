@@ -1,0 +1,13 @@
+body{
+    background-color: aqua;
+    padding-left: 80ex;
+    padding-top: 80px;
+}
+button{
+    color: rgba(3, 88, 67, 0.644);
+    background-color: rgb(136, 214, 219);
+    border-color: rgb(1, 129, 138);
+    border-radius: 5em;
+    font-size: 20px;
+    
+}
