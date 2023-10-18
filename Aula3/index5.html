@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Frases</title>
+    <script language="JavaScript">
+        let meu_numero = prompt("Quantas palavras?(até umas 5 tá bom)?","5");
+        let minha_string = "";
+        let minha_palavra;
+        for(loop = 0;loop<meu_numero;loop++){
+            linha_numero =loop + 1;
+            minha_palavra = prompt("qual a palavra número " +linha_numero+ "?", "");
+            minha_string = "palavra " +linha_numero+ ": " +minha_palavra+ "<br>" +minha_string;
+        }
+        window.document.writeln("<h2>Ao contrário!</h2>");
+        window.document.writeln(minha_string);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
