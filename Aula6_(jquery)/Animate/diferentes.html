@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){;
+    var div = $("div");
+       div.animate({height:'300px',opacity:'0.4'},"slow");
+       div.animate({width:'300px',opacity:'0.8'},"slow");
+       div.animate({height:'100px',opacity:'0.4'},"slow");
+       div.animate({width:'100px',opacity:'0.8'},"slow");
+    });
+  });
+
+</script>
+</head>
+<body>
+
+    <button>Iniciar animação</button><br>
+    
+<p>Por padrão,todos os elementos HTML possuem uma posição estática e não podem ser movidos.
+    Para manipular a posição, lembre-se de primeiro definir a propiedade CSS position 
+    do elemento como relative fixed ou absolute!</p>
+<div style="background: #98bf21;height: 300px; width: 300px;position: absolute;"></div>
+
+</body>
+</html>
