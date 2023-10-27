@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide();
+            });
+            $("#show").click(function(){
+                $("p").show();
+            });
+        });
+
+    </script>
+</head>
+<body>
+   <p>Se clicar no botão hide este parágrafo desaparece,
+    ao clicar no show ele reaparece. </p>
+
+    <button id="hide">Some</button>
+    <button id="show">Aparece</button>
+</body>
+</html>
